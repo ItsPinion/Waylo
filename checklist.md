@@ -8,7 +8,7 @@
 
 ### Checklist
 
-* [ ] Initialize repository with CI pipeline
+* [x] Initialize repository with CI pipeline
 * [ ] Configure TypeScript, linting, formatting
 * [ ] Establish feature-based folder structure
 * [ ] Create **service abstraction layer** (no direct backend calls from UI)
