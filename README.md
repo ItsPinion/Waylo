@@ -38,15 +38,15 @@ A travel group can create a party and reliably track members throughout a sessio
 
 ### In Scope (MVP)
 
-* Foreground real-time location sharing
-* Party creation and join via code/deep link
-* Live map with member markers
-* Destination + ETA display
-* Pause/stop sharing controls
-* Security rules enforcing party membership
-* Auto-expiration of inactive parties
+- Foreground real-time location sharing
+- Party creation and join via code/deep link
+- Live map with member markers
+- Destination + ETA display
+- Pause/stop sharing controls
+- Security rules enforcing party membership
+- Auto-expiration of inactive parties
 
-Derived from the build plan. 
+Derived from the build plan.
 
 ---
 
@@ -54,13 +54,13 @@ Derived from the build plan.
 
 To prevent scope creep:
 
-* Background location tracking
-* Chat or messaging
-* Media sharing
-* Navigation / turn-by-turn routing
-* Monetization
-* Social features
-* Wearable integrations
+- Background location tracking
+- Chat or messaging
+- Media sharing
+- Navigation / turn-by-turn routing
+- Monetization
+- Social features
+- Wearable integrations
 
 **Change Rule:** Any out-of-scope feature requires formal approval.
 
@@ -83,11 +83,11 @@ Project Owner resolves priority conflicts within 48 hours.
 
 ## 5. Assumptions
 
-* Team size ≤ 2 engineers
-* Firebase sufficient for MVP throughput
-* Parties typically ≤ 10 members
-* Sessions average 30–120 minutes
-* Users consent to location sharing
+- Team size ≤ 2 engineers
+- Firebase sufficient for MVP throughput
+- Parties typically ≤ 10 members
+- Sessions average 30–120 minutes
+- Users consent to location sharing
 
 If any assumption breaks, reassess architecture immediately.
 
@@ -97,18 +97,18 @@ If any assumption breaks, reassess architecture immediately.
 
 **Technical**
 
-* Mobile battery limitations
-* OS permission policies
-* Firebase geo-query limitations
+- Mobile battery limitations
+- OS permission policies
+- Firebase geo-query limitations
 
 **Operational**
 
-* Limited QA capacity
-* No dedicated design team
+- Limited QA capacity
+- No dedicated design team
 
 **Financial**
 
-* Prefer low operational overhead pre-product-market fit.
+- Prefer low operational overhead pre-product-market fit.
 
 ---
 
@@ -138,10 +138,10 @@ Operate on managed infrastructure until usage validates optimization effort.
 
 ### Estimated Cost Drivers
 
-* Firestore writes (high-frequency updates)
-* Maps / Directions API
-* Authentication
-* Analytics
+- Firestore writes (high-frequency updates)
+- Maps / Directions API
+- Authentication
+- Analytics
 
 ### Budget Guardrails
 
@@ -176,10 +176,10 @@ Operate on managed infrastructure until usage validates optimization effort.
 
 A feature is complete only when:
 
-* Tested on physical iOS + Android devices
-* Security rules validated
-* Error states handled
-* Performance measured
+- Tested on physical iOS + Android devices
+- Security rules validated
+- Error states handled
+- Performance measured
 
 ---
 
@@ -187,9 +187,9 @@ A feature is complete only when:
 
 Feature enters MVP only if it:
 
-* Improves safety
+- Improves safety
   **OR**
-* Improves coordination.
+- Improves coordination.
 
 Everything else defers.
 
@@ -199,10 +199,10 @@ Everything else defers.
 
 Ship only after:
 
-* Crash rate acceptable
-* Beta validated
-* Latency targets met
-* No critical security gaps
+- Crash rate acceptable
+- Beta validated
+- Latency targets met
+- No critical security gaps
 
 ---
 
@@ -210,10 +210,10 @@ Ship only after:
 
 **Testing Layers**
 
-* Unit — location services, permission handling
-* Integration — backend writes, subscriptions
-* Load — simulate ≥20 concurrent users
-* Field — real travel scenario testing
+- Unit — location services, permission handling
+- Integration — backend writes, subscriptions
+- Load — simulate ≥20 concurrent users
+- Field — real travel scenario testing
 
 **Beta Requirement:**
 Minimum 10 real users across multiple trips.
@@ -254,10 +254,10 @@ Location data is highly sensitive.
 
 **Non-negotiables:**
 
-* Explicit sharing indicator
-* Immediate stop on pause/leave
-* Least-privilege data rules
-* Automatic data minimization
+- Explicit sharing indicator
+- Immediate stop on pause/leave
+- Least-privilege data rules
+- Automatic data minimization
 
 Default toward user safety.
 
@@ -267,10 +267,10 @@ Default toward user safety.
 
 Project considered successful when:
 
-* MVP ships within ~8–10 weeks
-* Beta users complete trips without coordination failures
-* No major privacy complaints
-* Infrastructure cost remains controlled
+- MVP ships within ~8–10 weeks
+- Beta users complete trips without coordination failures
+- No major privacy complaints
+- Infrastructure cost remains controlled
 
 ---
 
@@ -278,10 +278,10 @@ Project considered successful when:
 
 Terminate or pivot if:
 
-* Battery drain exceeds 12%/hr
-* Latency cannot drop below 5s
-* Privacy model proves unreliable
-* Infra cost scales faster than adoption
+- Battery drain exceeds 12%/hr
+- Latency cannot drop below 5s
+- Privacy model proves unreliable
+- Infra cost scales faster than adoption
 
 Disciplined termination prevents sunk-cost traps.
 
@@ -301,4 +301,4 @@ Disciplined termination prevents sunk-cost traps.
 
 The underlying build plan is technically competent but operationally immature. This charter converts it into an executable project framework anchored in measurable delivery, controlled risk, and governance.
 
-Source build plan referenced here: 
+Source build plan referenced here:
